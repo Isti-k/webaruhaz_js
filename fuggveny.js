@@ -11,7 +11,7 @@ export function kartyaOsszeallit(lista){
         txt += `<h4 class="card-title">${element.nev}</h4>`;
         txt += `<p class="card-text">${element.ar}FT</p>`;
         txt += `<p class="card-text">Kategória: ${element.kategoria}</p>`;
-        txt += `<a href="#" class="btn btn-primary">Kosár</a>`;
+        txt += `<a href="kosar.html"  style="background-color: lightseagreen; border-color: gray;" class="btn btn-primary">Kosár</a>`;
         txt += `</div>`;
         txt += `</div>`;
     });
