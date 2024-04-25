@@ -18,7 +18,7 @@
 **kartyaMegjelenito(lista)->(txt)**;
 Megjeleníti a kártyákat
 
-**kartyaOsszaallítja(lista)->(txt)**;
+**kartyaOsszeallit(lista)->(txt)**;
 Összeállítja a kártyákat
 
 **tablázatMegjelenito(lista)->(txt)**;
