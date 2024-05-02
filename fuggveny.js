@@ -3,9 +3,9 @@ import { gepLISTA } from "./adat.js";
 
 export function kartyaOsszeallit(lista){
     let txt = "";
-    txt += `<div class="row m-1">`;
+    txt += `<div class="row">`;
     lista.forEach((element, i) => {
-        txt += `<div class="card" style="width:300px">`;
+        txt += `<div class="card" style="width:280px">`;
         txt += `<img class="card-img-top" src="${element.kep}" alt="Card image">`;
         txt += `<div class="card-body">`;
         txt += `<h4 class="card-title">${element.nev}</h4>`;

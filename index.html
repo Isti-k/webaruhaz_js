@@ -34,18 +34,22 @@
         </header>
         <article class="container m-auto">
             <div class="container row m-auto">
-                <select class="form-select form-select-sm" style="max-width: 200px;">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                </select>
-                <form class="d-flex" style="max-width: 200px;">
-                    <input class="form-control me-2" type="text" placeholder="Keresés">
-                    <button class="btn btn-primary" style="background-color: lightseagreen; border-color: gray;" type="button">Keresés</button>
+                <form action="/action_page.php">
+                    <div class="row">
+                        <select class="form-select form-select-sm" style="max-width: 200px;">
+                            <option id="alap">Termék rendezés</option>
+                            <option id="katrgoria1">A-Z-ig rendezés</option>
+                            <option id="katrgoria2">Z-A-ig rendezés</option>
+                            <option id="ar">Ár szerinti rendezés</option>
+                        </select>
+                        <div class="d-flex" style="max-width: 200px;">
+                            <input class="form-control me-2" type="text" placeholder="Keresés...">
+                            <button id="szNev" class="btn btn-primary" style="background-color: lightseagreen; border-color: gray;" type="button">Keresés</button>
+                        </div>
+                    </div>
                 </form>
             </div>
-            <div id="kartya"></div>
+            <div id="kartya" class="container row"></div>
         </article>
         <footer></footer>
     </main>
