@@ -32,7 +32,7 @@ export const gepLISTA = [
     {
         nev: "Corsair iCUE LINK H150i RGB",
         kep: "huto.jpg",
-        ar: 800000,
+        ar: 80000,
         kategoria: "alkatrész"
     }
 ]

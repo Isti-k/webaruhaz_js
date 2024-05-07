@@ -36,13 +36,14 @@
             <div class="container row m-auto">
                 <form action="/action_page.php">
                     <div class="row">
-                        <select class="form-select form-select-sm" style="max-width: 200px;">
-                            <option id="alap">Termék rendezés</option>
-                            <option id="kategoria1">A-Z-ig rendezés</option>
-                            <option id="kategoria2">Z-A-ig rendezés</option>
-                            <option id="ar">Ár szerinti rendezés</option>
+                        <select id="rendezes" class="form-select form-select-sm" style="max-width: 200px;">
+                            <option value="alap">Termék rendezés</option>
+                            <option value="nev">Név szerint A-Z rendezés</option>
+                            <option value="arn">Ár szerint növekvőbe rendez</option>
+                            <option value="arcs">Ár szerint csökkenőbe rendez</option>
+                            <option value="kategoria">Kategória szerint A-Z rebdezés</option>
                         </select>
-                        <div class="d-flex" style="max-width: 200px;">
+                        <div id="szures" class="d-flex" style="max-width: 200px;">
                             <input id="szNev" class="form-control me-2" type="text" placeholder="Keresés...">
                             <button class="btn btn-primary" style="background-color: lightseagreen; border-color: gray;" type="button">Keresés</button>
                         </div>
