@@ -1,5 +1,5 @@
 import { gepLISTA } from "./adat.js";
-import { tablakRendezNevek, tablazatRendezArnov, tablazatRendezArcs, tablazatRendezKategoria, szuresNevSz, szuresKategoriaSz } from "./adatkezelo.js";
+import { tablakRendezNevek, tablazatRendezArnov, tablazatRendezArcs, tablazatRendezKategoria, szuresNevSz } from "./adatkezelo.js";
 import { kartyaMegjelenito, kartyaOsszeallit } from "./fuggveny.js";
 
 init(gepLISTA);
@@ -16,23 +16,17 @@ function szuresek(){
     tablazatRendezArnov(gepLISTA);
     tablazatRendezKategoria(gepLISTA);
     nevSzuresEsemeny();
-    KategoriaSzEsemeny();
+    //KategoriaSzEsemeny();
 }
 
 export function nevSzuresEsemeny(){
     const szuroELEM = $("#szNev")
-    szuroELEM.on("keyup", function(){
+    const szuroGomb = $("#szures");
+    szuroGomb.on("click", function(){
         let szuroSZoveg = szuroELEM.val()
         const Lista=szuresNevSz(gepLISTA, szuroSZoveg);
         init(Lista)
     });
+    
 }
 
-function KategoriaSzEsemeny(){
-    const szuroELEM = $("#szNev");
-    szuroELEM.on("keyup", function(){
-        let szuroSZoveg = szuroELEM.val();
-        const Lista = szuresKategoriaSz(gepLISTA, szuroSZoveg);
-        init(Lista);
-    });
-}

@@ -76,10 +76,3 @@ export function szuresNevSz(lista, szurtSzoveg){
     });
     return szurtLISTA;
 }
-
-export function szuresKategoriaSz(lista, szurtSzoveg){
-    const szurtLISTA = lista.filter(function(elem){
-        return elem.kategoria.includes(szurtSzoveg);
-    });
-    return szurtLISTA;
-}
